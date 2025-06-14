@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const links = [
@@ -24,8 +23,15 @@ const Navbar = () => (
           </li>
         ))}
       </ul>
-      <Button variant="accent" className="ml-6 hidden md:inline-block min-w-[120px]">
-        Contact
+      {/* Update the Contact button to scroll to #contact */}
+      <Button
+        variant="secondary"
+        className="ml-6 hidden md:inline-block min-w-[120px]"
+        asChild
+      >
+        <a href="#contact">
+          Contact
+        </a>
       </Button>
     </div>
   </nav>

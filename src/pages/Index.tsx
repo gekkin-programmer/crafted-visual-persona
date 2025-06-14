@@ -1,9 +1,9 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -14,6 +14,7 @@ const Index = () => {
         <Projects />
         <Skills />
         <About />
+        <ContactForm />
       </main>
       <footer className="w-full py-8 mt-8 border-t border-border text-center text-muted-foreground font-inter">
         © {new Date().getFullYear()} [Your Name]. Crafted with <span className="text-accent font-bold">♥</span>
