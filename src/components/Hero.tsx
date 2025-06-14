@@ -14,7 +14,7 @@ const Hero = () => (
       <p className="font-inter max-w-xl text-lg text-muted-foreground/90 mb-8">
         I build delightful products and interfaces with a focus on clarity, precision, and personality.
       </p>
-      <Button asChild size="lg" variant="accent" className="group">
+      <Button asChild size="lg" variant="secondary" className="group">
         <a href="#projects" className="flex items-center gap-1 font-semibold text-lg">
           See my work <ArrowDownRight className="ml-1 w-5 h-5 transition-transform group-hover:translate-y-1 group-hover:translate-x-1" />
         </a>
@@ -23,7 +23,7 @@ const Hero = () => (
     <div className="flex-1 flex justify-center items-center animate-scale-in">
       <div className="w-56 h-56 rounded-full shadow-card overflow-hidden border-4 border-primary flex items-center justify-center animate-fade-in">
         <img
-          src="/photo-1649972904349-6e44c42644a7"
+          src="/lovable-uploads/df5ce182-f2b9-4d21-bdc2-3492a83dd184.png"
           alt="Portrait"
           className="object-cover w-full h-full"
           draggable={false}
