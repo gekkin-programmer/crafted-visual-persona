@@ -1,5 +1,8 @@
 
 import { Button } from "@/components/ui/button";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const links = [
   { id: "home", label: "Home" },
@@ -7,6 +10,34 @@ const links = [
   { id: "skills", label: "Skills" },
   { id: "about", label: "About" },
 ];
+
+const ThemeToggle = () => {
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return (
+    <Button
+      variant="ghost"
+      size="icon"
+      aria-label="Toggle theme"
+      className="ml-2"
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+    >
+      {resolvedTheme === "dark" ? (
+        <Sun className="w-5 h-5" />
+      ) : (
+        <Moon className="w-5 h-5" />
+      )}
+      <span className="sr-only">Toggle theme</span>
+    </Button>
+  );
+};
 
 const Navbar = () => (
   <nav className="fixed inset-x-0 top-0 h-16 bg-background/70 backdrop-blur z-30 shadow-sm">
@@ -28,7 +59,7 @@ const Navbar = () => (
           </li>
         ))}
       </ul>
-      {/* Right: Contact Button */}
+      {/* Right: Contact Button + Theme Toggle */}
       <div className="hidden md:flex items-center ml-6">
         <Button
           variant="secondary"
@@ -37,6 +68,11 @@ const Navbar = () => (
         >
           <a href="#contact">Contact</a>
         </Button>
+        <ThemeToggle />
+      </div>
+      {/* Mobile: Theme Toggle */}
+      <div className="md:hidden flex items-center">
+        <ThemeToggle />
       </div>
     </div>
   </nav>
