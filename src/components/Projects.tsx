@@ -1,6 +1,8 @@
 
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { cn } from "@/lib/utils";
 
 const projects = [
   {
@@ -31,9 +33,17 @@ const projects = [
 
 const Projects = () => {
   const [open, setOpen] = useState<number | null>(null);
+  const [ref, isVisible] = useScrollAnimation<HTMLElement>();
 
   return (
-    <section id="projects" className="py-16 animate-fade-in">
+    <section
+      ref={ref}
+      id="projects"
+      className={cn(
+        "py-16 transition-all duration-1000 ease-out",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      )}
+    >
       <h2 className="font-playfair text-3xl md:text-4xl mb-10 text-primary font-bold text-center">
         Projects
       </h2>
