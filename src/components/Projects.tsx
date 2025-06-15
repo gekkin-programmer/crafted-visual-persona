@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Modern SaaS Dashboard UI",
     desc: "A feature-rich, fully responsive admin dashboard for data-driven platforms.",
-    image: "/photo-1487058792275-0ad4aaf24ca7",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&auto=format&fit=crop",
     tech: ["React", "Tailwind", "TypeScript", "Shadcn UI"],
     link: "#",
     modalDetails: "Built for large teams and scalability. Includes authentication, real-time data, and custom charts."
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "E-Commerce Experience",
     desc: "A smooth, animated online store focused on user experience and performance.",
-    image: "/photo-1488590528505-98d2b5aba04b",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&auto=format&fit=crop",
     tech: ["React", "API", "Redux"],
     link: "#",
     modalDetails: "Custom checkout flow, seamless cart, adaptive product grid. Optimized core web vitals."
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Personal Blog Platform",
     desc: "Minimal, elegant blog CMS engineered for publishing and growth.",
-    image: "/photo-1461749280684-dccba630e2f6",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop",
     tech: ["Next.js", "MDX", "SEO"],
     link: "#",
     modalDetails: "Markdown-based, easy theming, great Lighthouse scores, shareable content blocks."
