@@ -21,7 +21,7 @@ const Hero = () => {
         )}
       >
         <h1 className="font-playfair text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-2 leading-tight">
-          Hi, I'm <span className="text-accent animate-scale-in">[Your Name]</span>
+          Hi, I'm <span className="text-accent animate-scale-in">Bryan</span>
         </h1>
         <h2 className="font-inter text-lg sm:text-xl md:text-2xl text-muted-foreground mb-3 md:mb-4">
           Creative Developer &amp; Designer crafting memorable digital experiences.

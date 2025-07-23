@@ -44,7 +44,7 @@ const Navbar = () => (
     <div className="container h-full flex items-center justify-between">
       {/* Left: Logo */}
       <span className="font-playfair text-2xl font-bold tracking-wide animate-fade-in">
-        [Your Name]
+        Pene Nkouam Bryan
       </span>
       {/* Center: Links */}
       <ul className="hidden md:flex flex-1 justify-center gap-8">

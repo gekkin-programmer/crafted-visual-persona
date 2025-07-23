@@ -17,7 +17,7 @@ const Index = () => {
         <ContactForm />
       </main>
       <footer className="w-full py-8 mt-8 border-t border-border text-center text-muted-foreground font-inter">
-        © {new Date().getFullYear()} [Your Name]. Crafted with <span className="text-accent font-bold">♥</span>
+        © {new Date().getFullYear()} Pene Nkouam Bryan. 
       </footer>
     </div>
   );
