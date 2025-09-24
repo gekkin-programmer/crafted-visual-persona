@@ -6,7 +6,8 @@
 
 ## preview of the portfolio?
 
-Visit 
+Visit https://crafted-visual-persona.vercel.app/
+
 
 
 **Use your preferred IDE**
