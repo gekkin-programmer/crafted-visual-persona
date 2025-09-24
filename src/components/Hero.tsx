@@ -20,7 +20,7 @@ const Hero = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         )}
       >
-        <h1 className="font-playfair text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-2 leading-tight">
+        <h1 className="font-playfair text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-2 leading-tight" data-aos>
           Hi, I'm <span className="text-accent animate-scale-in">Bryan</span>
         </h1>
         <h2 className="font-inter text-lg sm:text-xl md:text-2xl text-muted-foreground mb-3 md:mb-4">

@@ -1,31 +1,34 @@
 
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
+import Bookhub from '../Images/Bookhub.png';
+import Feje from '../Images/Feje.png';
+import Patrick from '../Images/patrick.png';
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "Modern SaaS Dashboard UI",
-    desc: "A feature-rich, fully responsive admin dashboard for data-driven platforms.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&auto=format&fit=crop",
-    tech: ["React", "Tailwind", "TypeScript", "Shadcn UI"],
+    title: "BookHub",
+    desc: "Step into Bookhub, your secret cave of books! Join the adventure and let's explore the endless wonders of reading together!",
+    image: Bookhub,
+    tech: ["React.js", "TailwindCSS", "Framer Motion", "FontAwesome"],
     link: "#",
     modalDetails: "Built for large teams and scalability. Includes authentication, real-time data, and custom charts."
   },
   {
-    title: "E-Commerce Experience",
+    title: "Feje Digital",
     desc: "A smooth, animated online store focused on user experience and performance.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&auto=format&fit=crop",
-    tech: ["React", "API", "Redux"],
+    image: Feje,
+    tech: ["React.js", "Tailwind", "Fontawesome", "Vite"],
     link: "#",
     modalDetails: "Custom checkout flow, seamless cart, adaptive product grid. Optimized core web vitals."
   },
   {
-    title: "Personal Blog Platform",
-    desc: "Minimal, elegant blog CMS engineered for publishing and growth.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop",
-    tech: ["Next.js", "MDX", "SEO"],
+    title: "E-commerce Book Store",
+    desc: "Minimal, elegant e-comm website CMS engineered for publishing and selling books.",
+    image: Patrick,
+    tech: ["PHP", "Fontawesome", "CSS"],
     link: "#",
     modalDetails: "Markdown-based, easy theming, great Lighthouse scores, shareable content blocks."
   }
