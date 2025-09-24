@@ -1,9 +1,9 @@
 
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
-import Bookhub from '../Images/Bookhub.png';
-import Feje from '../Images/Feje.png';
-import Patrick from '../Images/patrick.png';
+import Bookhub from '../Images/Bookhub.PNG';
+import Feje from '../Images/Feje.PNG';
+import Patrick from '../Images/patrick.PNG';
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 
